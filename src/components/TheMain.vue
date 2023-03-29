@@ -1,11 +1,11 @@
 <script>
 import MySearchBar from './MySearchBar.vue';
-import MySearchBar from './MySearchBar.vue';
+import MyCardProfiles from './MyCardProfiles.vue';
 
 export default {
     components: {
         MySearchBar,
-        MySearchBar
+        MyCardProfiles,
     },
     name: "TheMain",
     data() {
@@ -17,6 +17,7 @@ export default {
 <template>
     <main>
         <MySearchBar />
+        <MyCardProfiles />
     </main>
 </template>
 
@@ -24,7 +25,6 @@ export default {
 @use "../styles/partials/variables" as *;
 
 main {
-    height: 800px;
     background-color: $color-primary;
 }
 </style>

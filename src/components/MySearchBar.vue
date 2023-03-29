@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "MySearchBar.vue",
+    name: "MySearchBar",
     data() {
         return {}
     }
