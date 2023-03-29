@@ -19,6 +19,7 @@ export default {
       .then(
         response => {
           this.store.cardsList = response.data;
+          console.log(this.store.cardsList);
         }
       )
   }

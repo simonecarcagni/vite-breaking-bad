@@ -1,12 +1,27 @@
 <script>
+import { store } from '../store';
 export default {
     name: "MySearchBar",
     data() {
-        return {}
+        return {
+            store
+        }
     }
 }
 </script>
 
-<template></template>
+<template>
+    <div class="container">
+        <select class="archetypes">
+            <option value="alien">Alien</option>
+        </select>
+    </div>
+</template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.archetypes {
+
+    padding: 5px 10px;
+
+}
+</style>

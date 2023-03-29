@@ -4,16 +4,21 @@ export default {
     data() {
         return {
         }
+    },
+    props: {
+        name: String,
+        archetype: String,
+        image: String,
     }
 }
 </script>
 
 <template>
     <div class="card ms_card m-2">
-        <img src="" class="card-img-top " alt="">
+        <img :src="image" class="card-img-top " :alt="name">
         <div class="card-body">
-            <h5></h5>
-            <h5></h5>
+            <h5>{{ name }}</h5>
+            <h5>{{ archetype }}</h5>
         </div>
     </div>
 </template>
