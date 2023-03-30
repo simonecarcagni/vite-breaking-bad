@@ -16,6 +16,7 @@ export default {
 
 <template>
     <main>
+        i
         <MySearchBar />
         <MyCardProfiles />
     </main>
