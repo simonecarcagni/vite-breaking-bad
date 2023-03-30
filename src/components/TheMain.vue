@@ -1,10 +1,8 @@
 <script>
-import MySearchBar from './MySearchBar.vue';
 import MyCardProfiles from './MyCardProfiles.vue';
 
 export default {
     components: {
-        MySearchBar,
         MyCardProfiles,
     },
     name: "TheMain",
@@ -16,8 +14,6 @@ export default {
 
 <template>
     <main>
-        i
-        <MySearchBar />
         <MyCardProfiles />
     </main>
 </template>
