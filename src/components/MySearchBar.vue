@@ -14,7 +14,8 @@ export default {
     <div class="ms_primary_bg">
         <div class="container ms_search_container">
             <h5 class="m-2">Filtra per archetipo:</h5>
-            <select class="ms_archetypes m-2" @change="$emit('ChangeValue')">
+            <select class="ms_archetypes m-2" @change="$emit('ChangeValue')" v-model="store.optionsValue">
+                <option value="">All</option>
                 <option v-for="(card, index) in store.archetypeList" :key="index" :value="card.archetype_name">
                     {{ card.archetype_name }}
                 </option>

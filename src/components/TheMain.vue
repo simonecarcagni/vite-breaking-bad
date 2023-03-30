@@ -1,9 +1,11 @@
 <script>
 import MyCardProfiles from './MyCardProfiles.vue';
+import SearchResult from './SearchResult.vue';
 
 export default {
     components: {
         MyCardProfiles,
+        SearchResult
     },
     name: "TheMain",
     data() {
@@ -14,6 +16,7 @@ export default {
 
 <template>
     <main>
+        <SearchResult />
         <MyCardProfiles />
     </main>
 </template>
